@@ -1,0 +1,142 @@
+:root {
+  --blue-1: #0b2a66;
+  --blue-2: #123a83;
+  --blue-3: #1d4da3;
+  --text: #ffffff;
+  --muted: #d7e2ff;
+  --radius: 15px;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 0% 0%, #17418f 0%, transparent 60%),
+    radial-gradient(1200px 700px at 100% 0%, #142e6a 0%, transparent 60%),
+    var(--blue-1);
+  display: flex;
+  flex-direction: column;
+}
+.btn:hover {
+  background: var(--blue-3);
+  color: #fff;
+}
+.menu a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+.menu a:hover {
+  color: var(--blue-3); 
+  text-decoration: underline; 
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.menu {
+  display: flex;
+  gap: 26px;
+}
+.menu a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+section {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 100px 20px 70px;
+  display: grid;
+  gap: 20px;
+}
+.hero {
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  min-height: 80vh;
+}
+.badge {
+  display: inline-block;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.12);
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.05;
+  font-weight: 800;
+}
+.hero p {
+  max-width: 58ch;
+  color: var(--muted);
+}
+.frame {
+  position: relative;
+  padding: 16px;
+  border-radius: 15px;
+}
+.photoCard {
+  border-radius: 15px;
+  padding: 10px;
+}
+.photoCard img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.card {
+  background: var(--blue-2);
+  border-radius: var(--radius);
+  padding: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.28);
+}
+.card .card-content {
+  font-size: 20px;
+}
+.card-content {
+  text-align: center; 
+  font-size: 36px; 
+  font-weight: 800; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: grid;
+  gap: 22px;
+}
+.row.cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.row.cols-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.28);
+  background: transparent;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.contact {
+  text-align: center;
+  width: 100%;
+}
+.donate {
+  text-align: center;
+  color: #e9f0ff;
+  font-size: 48px;
+  font-weight: 800;
+}
+
