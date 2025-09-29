@@ -1,1 +1,1 @@
-# https://marhackimoff-arch.github.io/marik/
+# https://marhackimoff-arch.github.io/mar1k/
